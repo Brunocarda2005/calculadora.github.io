@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>calculadora</title>
+  
+  <script src="https://kit.fontawesome.com/413200ce63.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="calc.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Major+Mono+Display&family=Neonderthaw&family=Pacifico&family=Playfair+Display+SC:ital,wght@1,400;1,900&family=Poppins:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+
+  </head>
+
+  <body>
+  
+  
+    <section class="calc">
+    <form class="form">
+       <input type="text" placeholder="0" value="" id="input" disabled ></input>
+        <input class="delete" value="C" type="submit" onclick="reset()"></input>
+        <input class="arrow" type="submit" value="DEL" onclick="del()"   ></input>
+        <div class="contenedor">
+            <input  class="number" type="submit" value="7" onclick="input(7)" ></input>
+            <input  class="number" type="submit" value="8" onclick="input(8)" ></input>
+              <input  class="number" type="submit" value="9" onclick="input(9)" ></input>
+            <input  class="op" value="+" type="submit" onclick="input(+)" ></input>
+              <input  class="number" type="submit" value="6" onclick="input(6)" ></input>
+            <input  class="number" type="submit" value="5" onclick="input(5)" ></input>
+            <input  class="number" type="submit" value="4" onclick="input(4)" ></input>
+            <input  class="op" type="submit" value="-" onclick="input(-)"></input>
+            <input  class="number" type="submit" value="3" onclick="input(3)" ></input>
+            <input  class="number" type="submit" value="2" onclick="input(2)" ></input>
+            <input  class="number" type="submit" value="1" onclick="input(7)" ></input>
+            <input  class="op" type="submit" value="*" onclick="input(*)"  ></input>
+            <input  class="number" type="submit" value="7" onclick="input(.)" ></input>
+            <input  class="number" type="submit" value="0" onclick="input(0)" ></input>
+            <input  class="number" type="submit" value="/" onclick="input(/)" ></input>
+            <input  class="number" type="submit" value="=" onclick="calc()" ></input>
+        </div>
+   </form>
+  </section>
+  
+  
+  <script src="calc.js"></script>
+  
+  </body>
+</html>
